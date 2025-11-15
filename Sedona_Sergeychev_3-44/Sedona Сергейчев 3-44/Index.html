@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    /* Базовые стили */
+    
     * {
       margin: 0;
       padding: 0;
@@ -30,7 +30,7 @@
       padding: 0 20px;
     }
     
-    /* Главное меню */
+    
     .header {
       background: linear-gradient(90deg, #2c3e50 0%, #3498db 100%);
       padding: 15px 0;
@@ -47,7 +47,7 @@
       position: relative;
     }
     
-    /* Навигационные ссылки по бокам */
+    
     .header__left-nav,
     .header__right-nav {
       display: flex;
@@ -109,7 +109,7 @@
       display: none; /* Скрываем старое меню */
     }
     
-    /* Мобильное меню */
+    
     .header__menu-toggle {
       display: none;
       background: none;
@@ -122,7 +122,7 @@
       background: rgba(255, 255, 255, 0.1);
     }
     
-    /* Основной контент */
+    
     main {
       padding: 40px 0;
     }
@@ -195,7 +195,7 @@
       margin-right: auto;
     }
     
-    /* Картинки */
+    
     .content-image {
       max-width: 100%;
       height: auto;
@@ -210,7 +210,7 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     }
     
-    /* Бронирование */
+    
     .booking {
       text-align: center;
       padding: 50px 30px;
@@ -260,7 +260,7 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     }
     
-    /* Подвал */
+    
     .footer {
       background: linear-gradient(90deg, #2c3e50 0%, #3498db 100%);
       color: white;
@@ -318,7 +318,7 @@
       border: 0;
     }
     
-    /* Адаптивность */
+    
     @media (max-width: 768px) {
       .header__left-nav,
       .header__right-nav {
@@ -403,18 +403,18 @@
   <header class="header">
     <div class="container">
       <nav class="header__nav">
-        <!-- Левая часть навигации -->
+        
         <div class="header__left-nav">
           <a href="index.html" class="header__nav-link">Главная</a>
           <a href="catalog.html" class="header__nav-link">Фото и видео</a>
         </div>
         
-        <!-- Центральный логотип -->
+        
         <div class="header__center-logo">
           <img src="logo.svg" alt="Sedona Logo" width="185" height="96">
         </div>
         
-        <!-- Правая часть навигации -->
+        
         <div class="header__right-nav">
           <a href="feedback.html" class="header__nav-link">Форма отзыва</a>
           <a href="https://htmlacademy.ru" class="header__nav-link">HTML Academy</a>
@@ -424,7 +424,7 @@
           ☰
         </button>
         
-        <!-- Мобильное меню (скрыто на десктопе) -->
+        
         <ul class="header__nav-list" id="navList">
           <li><a href="index.html">Главная</a></li>
           <li><a href="catalog.html">Фото и видео</a></li>
@@ -436,23 +436,23 @@
   </header>
 
   <main class="container">
-    <!-- Пейзаж Седоны -->
+    
     <section>
       <img src="intro.png" alt="Пейзаж Седоны" class="content-image">
     </section>
 
-    <!-- Контент из картинки -->
+   
     <section>
       <img src="content.png" alt="Причины посетить Седону" class="content-image">
     </section>
 
-    <!-- Карта -->
+   
     <section>
       <h2 class="visually-hidden">Карта Седоны</h2>
       <img src="map-desktop.jpg.png" alt="Карта Седоны" class="content-image">
     </section>
 
-    <!-- Бронирование -->
+  
     <section class="booking">
       <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -473,7 +473,7 @@
   </footer>
 
   <script>
-    // Мобильное меню
+    
     const menuToggle = document.getElementById('menuToggle');
     const navList = document.getElementById('navList');
     
@@ -481,7 +481,7 @@
       navList.classList.toggle('active');
     });
     
-    // Закрытие меню при клике на ссылку
+    
     const navLinks = document.querySelectorAll('.header__nav-list a');
     navLinks.forEach(link => {
       link.addEventListener('click', function() {
@@ -491,4 +491,5 @@
   </script>
 
 </body>
+
 </html>
